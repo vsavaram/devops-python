@@ -3,7 +3,7 @@ from FileReader import FileReader
 
 # Parse the user database from file
 fileReader = FileReader()
-fileReader.parse("C:\\Users\\Vamsi\\PycharmProjects\\projectpy2\\users.txt")
+fileReader.parse(".\\users.txt")
 
 # Fetch username and password from user
 username = input("Username:")

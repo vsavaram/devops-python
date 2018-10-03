@@ -1,7 +1,5 @@
 Username | Password | Full name | Phone number
 
-sriram |  sriram1234 | Sriram Blah | 0101234567
-
 vamsi | vamsi1234 | Vamsi Blah | 0201234567
 
 crap | crap1234 | WTH | 1234556670
