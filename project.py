@@ -10,7 +10,7 @@ prompt = input("Do you want to register a new user??(y/n)")
 if prompt is not 'y':
     prompt = input("Do you want to login??(y/n)")
     if prompt is not 'y':
-        print("Have a bad day")
+        print("Then get out of here!")
         exit(-1)
     else:
         login = Login(fileHandler)
