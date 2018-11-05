@@ -1,6 +1,6 @@
 from FileHandler import FileHandler
 from Login import Login
-from Register import Register
+from Register_Original import Register
 
 # Parse the user database from file
 fileHandler = FileHandler()
@@ -14,7 +14,10 @@ if prompt is not 'y':
         exit(-1)
     else:
         login = Login(fileHandler)
-        login.execute()
+        # Fetch username and password from user
+        username = input("Username:")
+        password = input("Password:")
+        print(login.execute(username, password))
         exit(0)
 else:
     register = Register(fileHandler)

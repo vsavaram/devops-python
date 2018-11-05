@@ -10,20 +10,14 @@ class Register:
         except ValueError:
             return False
 
-    def execute(self):
+    def execute(self, username, password, full_name, email, phone_number):
         # Register user information
-        username = input("Username:")
         user = self.fileHandler.get_row(username)
         if user is not None:
-            print("User already exists.")
-            return False
+            return "User already exists.\n"
 
-        password = input("Password:")
-        full_name = input("Fullname:")
-        phone_number = input("Phone number:")
         while not self.is_number(phone_number):
-            print("Only numbers allowed")
-            phone_number = input("Phone number:")
+            return "Only numbers allowed\n"
 
         self.fileHandler.add_row(username, password, full_name, phone_number)
         self.fileHandler.write_table()
@@ -32,10 +26,9 @@ class Register:
         user = self.fileHandler.get_row(username)
         if user is not None:
             if username == user[0] and password == user[1]:
-                print("User %s registered successfully" % user[0])
-                print("Full name: %s" % user[2])
-                print("Phone number: %s" % user[3])
-                return True
+                results = "User " + user[0] + " registered successfully\n"
+                results += "Full name: " + user[2] + "\n"
+                results += "Phone number: " + user[3] + "\n"
+                return results
 
-        print("Something went wrong with registration!!!")
-        return False
+        return "Something went wrong with registration!!!"
