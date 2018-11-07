@@ -9,8 +9,8 @@ class Login:
         if user is not None:
             if username == user[0] and password == user[1]:
                 result += "Logged in successfully\n"
-                result += "Full name: " + user[2] + "\n"
-                result += "Phone number: " + user[3] + "\n"
+                result += "Full name: " + user[2]+"\n"
+                result += "Phone number: " + user[3]
                 return result
 
         result += "Wrong username or password!!!\n"
