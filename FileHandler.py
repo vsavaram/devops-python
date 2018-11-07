@@ -52,9 +52,11 @@ class FileHandler:
     def get_row(self, key):
         if self.fileHandle is None:
             print("Table not yet parsed, call parse() first")
-            return
+            return None
+
         if key in self.table:
             return self.table[key]
+
         return None
 
     def write_table(self):

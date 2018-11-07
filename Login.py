@@ -6,7 +6,7 @@ class Login:
         result = ""
         # Check if user exists and print data
         user = self.fileHandler.get_row(username)
-        if user is not None:
+        if user is not None and len(user) > 2:
             if username == user[0] and password == user[1]:
                 result += "Logged in successfully\n"
                 result += "Full name: " + user[2]+"\n"
