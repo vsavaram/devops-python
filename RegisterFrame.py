@@ -8,7 +8,7 @@ class RegisterFrame:
         self.fileHandler = file_handler
 
         self.details_frame = Frame(frame, bg="Orange")
-        self.details_frame.grid(row=0, column=0)
+        self.details_frame.grid(row=0, sticky=W)
 
         self.lbl_username = Label(self.details_frame, text="Username", bd=5, bg="Orange")
         self.lbl_username.grid(row=0, sticky=W)
@@ -33,16 +33,16 @@ class RegisterFrame:
         self.entry_phone = Entry(self.details_frame, width=20)
         self.entry_phone.grid(row=4, column=1)
 
-        self.status_frame = Frame(frame)
-        self.status_frame.grid(row=1, column=0)
+        self.status_frame = Frame(frame, bg="Orange")
+        self.status_frame.grid(row=1, sticky=W)
 
-        self.lbl_status = Label(self.status_frame, text="", bd=10, bg="Orange", font=("Arial Bold", 10))
+        self.lbl_status = Label(self.status_frame, text="", bg="Orange", bd=5, font=("Arial Bold", 10))
         self.lbl_status.grid()
 
-        self.register_frame = Frame(frame)
-        self.register_frame.grid(row=2, column=0)
+        self.register_frame = Frame(frame, bg="Orange")
+        self.register_frame.grid(row=2, column=0, sticky=E)
         self.register_button = Button(self.register_frame, text="Register", command=self.run_register_cmd)
-        self.register_button.grid(row=0, column=0)
+        self.register_button.grid(row=0, column=0, sticky=E)
 
     def run_register_cmd(self):
         register = Register(self.fileHandler)

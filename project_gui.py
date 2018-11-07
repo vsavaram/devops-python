@@ -21,19 +21,19 @@ def user_info_cmd():
 
 mainWindow = Tk()
 mainWindow.title("Welcome to the world of python!!")
-mainWindow.geometry("500x200")
+mainWindow.geometry("500x300")
 mainWindow.configure(bg="Orange")
 
-topFrame = Frame(mainWindow)
-topFrame.grid(row=0, sticky=N)
+topFrame = Frame(mainWindow, bg="Orange")
+topFrame.grid(row=0, column=0, sticky=W)
 
 newUserButton = Button(topFrame, text="New user", command=new_user_cmd)
-newUserButton.grid(row=0, column=0)
+newUserButton.grid(row=0, column=0, sticky=W)
 getUserInfoButton = Button(topFrame, text="Get user information", command=user_info_cmd)
-getUserInfoButton.grid(row=0, column=1)
+getUserInfoButton.grid(row=0, column=1, sticky=W)
 
-mainFrame = Frame(mainWindow)
-mainFrame.grid(row=1, sticky=N)
+mainFrame = Frame(mainWindow, bg="Orange")
+mainFrame.grid(row=1, column=0, sticky=W)
 
 loginFrame = LoginFrame(fileHandler, mainFrame)
 registerFrame = RegisterFrame(fileHandler, mainFrame)
