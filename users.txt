@@ -1,7 +1,3 @@
 Username | Password | Full name | Phone number
 
-vamsi|vamsi1234|Vamsi Blah|0201234567
-crap|crap1234|WTH|1234556670
-johan|johan1234|YH|9848484848
-va|va|vans|090909
-as|as|asas|3434
+vamsi|vamsis|vamsikrishna|0701234567

@@ -20,8 +20,8 @@ def user_info_cmd():
 
 
 mainWindow = Tk()
-mainWindow.title("Welcome to the world of python!!")
-mainWindow.geometry("500x300")
+mainWindow.title("Python!!")
+mainWindow.geometry("250x300")
 mainWindow.configure(bg="Orange")
 
 topFrame = Frame(mainWindow, bg="Orange")

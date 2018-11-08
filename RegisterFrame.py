@@ -18,7 +18,7 @@ class RegisterFrame:
         self.lbl_fullname.grid(row=2, sticky=W)
         self.lbl_email = Label(self.details_frame, text="Email", bd=5, bg="Orange")
         self.lbl_email.grid(row=3, sticky=W)
-        self.lbl_phone = Label(self.details_frame, text="Phone number", bd=5, bg="Orange")
+        self.lbl_phone = Label(self.details_frame, text="Phone", bd=5, bg="Orange")
         self.lbl_phone.grid(row=4, sticky=W)
 
         self.entry_username = Entry(self.details_frame, width=20)

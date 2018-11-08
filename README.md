@@ -16,6 +16,18 @@ project.py requires the users.txt to have the following header before trying to 
 Username | Password | Full name | Phone number
 ```
 
+## GUI
+### Registering new users
+When project_gui.py is executed, click on the "New user" button on the top left corner of the GUI.
+For e.g. this is how the output will look when a new user is registered.
+![Screenshot](register_frame.png)
+
+### Logging in of an user
+When project_gui.py is executed, click on the "Get user information" button on the top left corner of the GUI.
+For e.g. this is how the output will look when the login succeeded.
+![Screenshot](login_frame.png)
+
+## Console
 ### Registering new users
 When project.py is executed, input (y) to the prompt that asks if a new user should be registered.
 For e.g. this is how the output will look when a new user is registered.
